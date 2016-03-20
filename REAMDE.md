@@ -1,13 +1,14 @@
 ## [ ] Time Complexity
-        [ ] - review slides
-        [X] - [COMPLETE] Attend Time Complexity workshop 
-        [ ] - Quiz on Tomorrow
+        [X] - [Complete] review slides
+        [X] - [Complete] Attend Time Complexity workshop 
+        [X] - [Complete] Quiz on Tomorrow
 
 ## [ ] Toy Problem/ Algo Design
     ** Due on Monday 9:00A.M.
-        [x] -[Complete] Single Number(136)
-            [x] - Added Pseudocode?
-        [ ] - Add Digits(258)
+        [X] -[Complete] Single Number(136)
+            [X] - Added Pseudocode?
+        [X] - Add Digits(258)
+            [X] - Added Pseudocode?
 
 ##[ ] Pseudoclassical Instantiation PAttern/Inheritance
     ** Due on Wednesday 9:00A.M.
