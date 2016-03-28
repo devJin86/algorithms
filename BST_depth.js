@@ -24,26 +24,13 @@ var TreeNode = function(val) {
 
 
 var maxDepth = function(root) {
+  var leftCounter = 0,
+  var rightCounter = 0;
+  if(root === null) return 0;
 
-  var leftCounter = leftCounter || 0,
-     rightCounter = rightCounter || 0;
-
-  // if root doesnot contain a value
-  if(root === null) return null;
-  // if root left is not null
-  if(root.left !== null) {
-    var leftNode = root.left;
-    leftNode = maxDepth(leftNode);
-    // set leftNode as root
-    leftNode = root;
+  else {
+    leftCounter = maxDepth(root.left);
+    rightCounter = maxDepth(root.right);
+    return leftCounter > rightCounter ? leftCounter + 1 : rightCounter + 1;
   }
-  if(root.right !== null) {
-    var rightNode = root.right;
-    rightNode = maxDepth(rightNode);
-    rightNode = root;
-  }
-
-  // now that inverse is done
-
-
 };
