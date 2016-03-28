@@ -15,22 +15,26 @@
 
 // for the testing 
 
-var TreeNode = function(val) {
-  this.val = val,
-  this.left = left || null,
-  this.right = right ||null;
-}
+// var TreeNode = function(val) {
+//   this.val = val,
+//   this.left = left || null,
+//   this.right = right ||null;
+// }
 
 
 
 var maxDepth = function(root) {
-  var leftCounter = 0,
-  var rightCounter = 0;
-  if(root === null) return 0;
+  var leftCounter,
+      rightCounter;
+
+  if(root === null) {return 0};
 
   else {
+
     leftCounter = maxDepth(root.left);
     rightCounter = maxDepth(root.right);
-    return leftCounter > rightCounter ? leftCounter + 1 : rightCounter + 1;
+    return leftCounter > rightCounter ? // compare
+             leftCounter + 1 : // true
+             rightCounter + 1;
   }
 };

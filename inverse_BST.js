@@ -12,22 +12,26 @@
  */
 var invertTree = function(root) {
     // if root doesnot contain a value
-    if(root === null) return null;
+    if(root === null) {return null};
+
     // if root left is not null
     if(root.left !== null) {
+
       var leftNode = root.left;
-      leftNode = maxDepth(leftNode);
+      leftNode = invertTree(leftNode);
       // set leftNode as root
       leftNode = root;
     }
     if(root.right !== null) {
+
       var rightNode = root.right;
-      rightNode = maxDepth(rightNode);
+      rightNode = invertTree(rightNode);
       rightNode = root;
     }
+
     // now that we set root;
     root.left = null;
     root.right = null;
-
+    
     return root;
 };
